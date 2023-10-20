@@ -36,6 +36,7 @@ A simple FastAPI application for calculating mortgage payments.
 
 ```sh
 pytest
+```
 
 ## Using the API
 

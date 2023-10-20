@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mortgage Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Mortgage Calculator</h1>
+
+        <div class="form">
+                <div class="input-group">
+                    <label for="propertyPrice">Property Price</label>
+                    <input type="number" id="propertyPrice" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="downPayment">Down Payment</label>
+                    <input type="number" id="downPayment" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="annualInterestRate">Annual Interest Rate</label>
+                    <input type="number" id="annualInterestRate" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="amortizationPeriod">Amortization Period</label>
+                    <input type="number" id="amortizationPeriod" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="paymentSchedule">Payment Schedule</label>
+                    <select id="paymentSchedule">
+                        <option value="ACCELERATED_BIWEEKLY">Accelerated Bi-Weekly</option>
+                        <option value="BIWEEKLY">Bi-Weekly</option>
+                        <option value="MONTHLY">Monthly</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <button onclick="calculate(event)">Calculate</button>
+                </div>
+        </div>
+
+        <div class="output">
+            <p>Your monthly payment will be: <span id="result"></span></p>
+            <p class="error" id="error"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

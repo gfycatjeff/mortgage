@@ -53,8 +53,9 @@ Replace the following placeholders in the examples below:
 ```sh
 curl -X 'GET' \
   'http://127.0.0.1:8000/mortgage_calculator?property_price=<property_price>&down_payment=<down_payment>&annual_interest_rate=<annual_interest_rate>&amortization_period=<
+```
 
-### With cURL
+With WebUI
 
 Once the application is running, you can also use the web interface to calculate mortgage payments. Open your browser and navigate to http://127.0.0.1:8000/static to access the UI.
 
